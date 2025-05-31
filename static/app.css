@@ -40,6 +40,7 @@ h1, h2, h3 {
 #main-navigation h1 {
   color: white;
   margin: 0;
+  font-size: 1.5rem;
 }
 
 #main-navigation a {
@@ -65,5 +66,10 @@ h1, h2, h3 {
 
   #main-navigation a {
     margin: 0.5rem;
+  }
+
+  #main-navigation h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
   }
 }
