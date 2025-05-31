@@ -28,7 +28,7 @@ Clone the repository
 bash
 Copy
 Edit
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/ps-1711/MY_SITE.git
 cd your-repo
 Create a virtual environment
 
