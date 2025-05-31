@@ -54,68 +54,7 @@ h1, h2, h3 {
   color: #cf79f1;
 }
 
-/* Welcome Section */
-#welcome {
-  margin-top: 6rem;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-#welcome img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-#welcome p {
-  font-size: 1.1rem;
-  margin-top: 1rem;
-}
-
-/* Latest Posts */
-#latest-posts {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-#latest-posts ul {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-
-/* Post Cards */
-#latest-posts li {
-  background-color: #f3f3f3;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-#latest-posts li:hover {
-  transform: scale(1.02);
-}
-
-/* About Section */
-#about {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-
-#about p {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-/* Responsive */
+/* Responsive navigation */
 @media (max-width: 768px) {
   #main-navigation {
     flex-direction: column;
@@ -126,15 +65,5 @@ h1, h2, h3 {
 
   #main-navigation a {
     margin: 0.5rem;
-  }
-
-  #welcome img {
-    width: 100px;
-    height: 100px;
-  }
-
-  #welcome p,
-  #about p {
-    font-size: 1rem;
   }
 }
