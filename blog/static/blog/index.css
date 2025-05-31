@@ -45,12 +45,19 @@
   padding: 2rem;
   border-radius: 12px;
   max-width: 90%;
-  margin: 2rem auto;
+  margin: 2rem auto 0 auto;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   position: relative;
-  top: 0;
   z-index: 1;
   text-align: center;
+}
+
+/* Fix spacing on mobile */
+@media (max-width: 768px) {
+  #latest-posts {
+    margin-top: 1rem;
+    padding: 1.5rem;
+  }
 }
 
 #latest-posts h2 {
@@ -78,7 +85,7 @@
   text-align: center;
   padding: 3rem 1rem;
   background-color: #e48900;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 #about h2 {
@@ -126,5 +133,6 @@
 
   #latest-posts {
     max-width: 60rem;
+    margin-top: -4rem; /* overlap only on desktop */
   }
 }
