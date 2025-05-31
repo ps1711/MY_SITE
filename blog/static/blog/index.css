@@ -39,21 +39,23 @@
   margin-top: 1rem;
 }
 
-/* Latest posts section */
+/* Latest Posts Section */
 #latest-posts {
   background-color: white;
   padding: 2rem;
   border-radius: 12px;
   max-width: 90%;
   margin: 2rem auto;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   position: relative;
   top: 0;
+  z-index: 1;
+  text-align: center;
 }
 
 #latest-posts h2 {
-  text-align: center;
   font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 #latest-posts ul {
@@ -76,7 +78,7 @@
   text-align: center;
   padding: 3rem 1rem;
   background-color: #e48900;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 #about h2 {
@@ -90,19 +92,18 @@
   margin: 0.5rem 0;
 }
 
-/* Larger screens */
+/* Larger Screens */
 @media (min-width: 768px) {
   #welcome header {
     flex-direction: row;
     align-items: center;
-    text-align: left;
     justify-content: center;
+    text-align: left;
   }
 
   #welcome h2 {
     font-size: 3rem;
     margin-left: 2rem;
-    text-align: left;
   }
 
   #welcome img {
