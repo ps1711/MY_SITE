@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
     getenv("APP_HOST")
 ]
 
-# Application definition
+#Application definition
 
 INSTALLED_APPS = [
     'blog',
