@@ -27,7 +27,7 @@ SECRET_KEY = 'l1s5h%-io2b)u&4__&ms1g=x@b0v+!a!o2z6#sl!t$l45$ah^6'
 DEBUG = True
 
 # api/settings.py
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = ["*"]
 
 #Application definition
 
