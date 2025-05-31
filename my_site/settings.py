@@ -26,9 +26,8 @@ SECRET_KEY = getenv("SECRET_NAME")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    getenv("APP_HOST")
-]
+# api/settings.py
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 #Application definition
 
@@ -72,8 +71,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'my_site.wsgi.application'
-
+# api/settings.py
+WSGI_APPLICATION = 'api.wsgi.app'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
