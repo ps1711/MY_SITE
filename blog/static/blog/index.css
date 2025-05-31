@@ -1,20 +1,20 @@
 #welcome {
   background: linear-gradient(to right top, #6305dd, #390281);
   padding: 6rem 12%;
+  color: white;
 }
 
 #welcome header {
   display: flex;
-  align-items: flex-start;
-  margin: 3rem auto;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 1rem;
 }
 
 #welcome img {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   object-fit: cover;
   object-position: top;
   border: 5px solid white;
@@ -25,30 +25,32 @@
 }
 
 #welcome h2 {
-  font-size: 3.5rem;
-  margin: 1rem 0 0 2rem;
+  font-size: 2.2rem;
+  margin: 0;
   color: #e4e4e4;
-  width: 100%;
+  word-break: break-word;
 }
 
 #welcome p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
+/* Latest posts section */
 #latest-posts {
   background-color: white;
   padding: 2rem;
   border-radius: 12px;
-  width: 90%;
-  max-width: 12rem;
-  margin: -6rem auto 2rem auto;
+  max-width: 100%;
+  width: 60rem;
+  margin: -4rem auto 2rem auto;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
 }
 
 #latest-posts h2 {
   text-align: center;
+  font-size: 1.8rem;
 }
 
 #latest-posts ul {
@@ -56,16 +58,17 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
 }
 
 #latest-posts li {
-  flex: 1 1 100%;
-  max-width: 30rem;
+  flex: 1 1 200px;
+  max-width: 300px;
 }
 
+/* About section */
 #about {
   text-align: center;
   padding: 3rem 1rem;
@@ -74,44 +77,44 @@
 }
 
 #about h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 #about p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #353535;
+  margin: 0.5rem 0;
 }
 
-/* ✅ Responsive adjustments */
-@media (max-width: 768px) {
+/* Responsive adjustments */
+@media (min-width: 768px) {
   #welcome header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    text-align: left;
   }
 
   #welcome h2 {
-    font-size: 2.5rem;
-    margin-left: 0;
+    font-size: 3.5rem;
+    margin-left: 2rem;
+  }
+
+  #welcome img {
+    width: 10rem;
+    height: 10rem;
   }
 
   #welcome p {
-    font-size: 1.2rem;
-  }
-
-  #latest-posts ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #latest-posts li {
-    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
   }
 
   #about h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   #about p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
