@@ -29,7 +29,7 @@ bash
 Copy
 Edit
 git clone https://github.com/ps-1711/MY_SITE.git
-cd your-repo
+cd MY_SITE
 Create a virtual environment
 
 bash
