@@ -34,6 +34,7 @@
 
 .post h3 {
   margin: 0.25rem 0;
+  font-size: 1.25rem; /* Use rem */
 }
 
 .post time {
@@ -49,6 +50,26 @@
 }
 
 /* ✅ Responsive tweaks */
+@media (max-width: 576px) { /* Very small devices */
+  .post a {
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  .post img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .post h3 {
+    font-size: 1.1rem;
+  }
+
+  .post time {
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 768px) {
   .post a {
     padding: 0.75rem;

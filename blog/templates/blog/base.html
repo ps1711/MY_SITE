@@ -1,24 +1,24 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}My Blog{% endblock %}</title>
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'blog/app.css' %}" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static "app.css" %}">
   {% block css_files %}{% endblock %}
 </head>
-<body>
-  <nav id="main-navigation">
-    <h1><a href="{% url 'index' %}">Priyanshu's Blog</a></h1>
-    <div>
-      <a href="{% url 'all-posts' %}">All Posts</a>
-      <a href="{% url 'stored-posts' %}">Saved Posts</a>
-    </div>
-  </nav>
+<body class="no-scroll">  <header id="main-navigation">
+    <h1><a href="{% url "starting-page" %}">Priyanshu's Blog</a></h1>
+    <nav>
+      <a href="https://portfolio-phi-black-91.vercel.app/">Portfolio</a>
+      <a href="{% url "read-later" %}">Stored Posts</a>
+      <a href="{% url "posts-page" %}">All Posts</a>
+    </nav>
+    </header>
 
-  <main>
-    {% block content %}{% endblock %}
-  </main>
+  {% block content %}
+  {% endblock %}
 </body>
 </html>

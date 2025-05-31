@@ -1,7 +1,6 @@
-/* Welcome Section */
 #welcome {
   background: linear-gradient(to right top, #6305dd, #390281);
-  padding: 6rem 1rem 3rem 1rem;
+  padding: 4rem 5%; /* Use percentage padding */
   color: white;
   text-align: center;
 }
@@ -27,7 +26,7 @@
 }
 
 #welcome h2 {
-  font-size: 2.2rem;
+  font-size: 2rem; /* Use rem */
   margin: 0;
   color: #e4e4e4;
   word-break: break-word;
@@ -35,7 +34,7 @@
 
 #welcome p {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Use rem */
   margin-top: 1rem;
 }
 
@@ -52,16 +51,8 @@
   text-align: center;
 }
 
-/* Fix spacing on mobile */
-@media (max-width: 768px) {
-  #latest-posts {
-    margin-top: 1rem;
-    padding: 1.5rem;
-  }
-}
-
 #latest-posts h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem; /* Use rem */
   margin-bottom: 1rem;
 }
 
@@ -83,24 +74,27 @@
 /* About Section */
 #about {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 3rem 5%; /* Use percentage padding */
   background-color: #e48900;
   margin-top: 2rem;
 }
 
 #about h2 {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Use rem */
   margin-bottom: 1rem;
 }
 
 #about p {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Use rem */
   color: #353535;
   margin: 0.5rem 0;
 }
 
 /* Larger Screens */
-@media (min-width: 768px) {
+@media (min-width: 576px) {  /* Small devices (landscape phones, 576px and up) */
+  #welcome {
+    padding: 6rem 5%;
+  }
   #welcome header {
     flex-direction: row;
     align-items: center;
@@ -109,8 +103,32 @@
   }
 
   #welcome h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 2rem;
+  }
+
+  #welcome img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  #welcome p {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  #about h2 {
+    font-size: 2.2rem;
+  }
+
+  #about p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) { /* Medium devices (tablets, 768px and up) */
+  #welcome h2 {
+    font-size: 3rem;
   }
 
   #welcome img {
@@ -120,7 +138,6 @@
 
   #welcome p {
     font-size: 1.5rem;
-    text-align: left;
   }
 
   #about h2 {
@@ -133,6 +150,6 @@
 
   #latest-posts {
     max-width: 60rem;
-    margin-top: -4rem; /* overlap only on desktop */
+    margin-top: -4rem;
   }
 }
