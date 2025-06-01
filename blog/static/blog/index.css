@@ -50,7 +50,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Fix spacing on mobile */
