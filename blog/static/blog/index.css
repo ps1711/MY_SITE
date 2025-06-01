@@ -4,6 +4,7 @@
   padding: 6rem 1rem 3rem 1rem;
   color: white;
   text-align: center;
+  margin-top: 70px;
 }
 
 #welcome header {
@@ -50,6 +51,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /* Fix spacing on mobile */
