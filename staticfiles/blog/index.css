@@ -49,6 +49,7 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   justify-content: center;
+  display: flex;
   z-index: 1;
   overflow-y: hidden;
 }
