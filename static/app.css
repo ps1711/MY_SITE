@@ -76,12 +76,3 @@ h3 {
     display: flex;
   }*/
 }
-
-body {
-  padding-top: 56 px; /* Fix for fixed navbar */
-}
-
-/* Optional: add top padding directly to welcome section */
-#welcome {
-  padding-top: 56 px;
-}
