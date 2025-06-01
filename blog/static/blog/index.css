@@ -132,5 +132,6 @@
   #latest-posts {
     max-width: 60rem;
     margin-top: -4rem; /* overlap only on desktop */
+    justify-content: center;
   }
 }
