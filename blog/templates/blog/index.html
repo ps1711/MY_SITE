@@ -1,42 +1,53 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% load static %}
 
-{% block title %} 
-Priyanshu Blog 
-{% endblock %} 
+{% block title %}
+Priyanshu Blog
+{% endblock %}
 
 {% block css_files %}
-  <link rel="stylesheet" href="{% static "blog/post.css" %}" />
-  <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'blog/post.css' %}" />
+  <link rel="stylesheet" href="{% static 'blog/index.css' %}" />
 {% endblock %}
 
 {% block content %}
-<section id="welcome">
-  <header>
-    <img src="{% static "blog/images/priyanshu.jpg" %}" alt="Priyanshu - The Author Of This Blog" />
-    <h2>My BLOG</h2>
-  </header>
-  <p>Hi, I am Priyanshu and I love to blog about different aspects of world!</p>
+<section id="welcome" class="py-5 bg-primary text-white text-center">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-auto mb-3 mb-md-0">
+        <img src="{% static 'blog/images/priyanshu.jpg' %}" alt="Priyanshu - The Author Of This Blog"
+             class="rounded-circle shadow" style="width: 120px; height: 120px; object-fit: cover;">
+      </div>
+      <div class="col-12 col-md-auto">
+        <h2 class="display-5 fw-bold">My BLOG</h2>
+      </div>
+    </div>
+    <p class="mt-4 fs-5">Hi, I am Priyanshu and I love to blog about different aspects of the world!</p>
+  </div>
 </section>
 
-<section id="latest-posts">
-  <h2>My Latest Thoughts</h2>
-
-  <ul>
+<section id="latest-posts" class="container my-5">
+  <h2 class="text-center mb-4">My Latest Thoughts</h2>
+  <div class="row g-4">
     {% for post in posts %}
-      {% include "blog/includes/post.html" %}
+      <div class="col-12 col-md-6 col-lg-4">
+        {% include "blog/includes/post.html" %}
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 </section>
 
-<section id="about">
-  <h2>What I Do</h2>
-  <p>
-    I love programming, I love to help others and I enjoy exploring new
-    technologies in general!
-  </p>
-  <p>
-    My goal is to keep on growing as a developer - and if I could have a discussion from you, I'd be very happy!
-  </p>
+<section id="about" class="bg-warning text-dark py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">What I Do</h2>
+    <p class="fs-5">
+      I love programming, I love to help others and I enjoy exploring new technologies in general!
+    </p>
+    <p class="fs-5">
+      My goal is to keep on growing as a developer – and if I could have a discussion with you, I'd be very happy!
+    </p>
+  </div>
 </section>
 {% endblock %}
