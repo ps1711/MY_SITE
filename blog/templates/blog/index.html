@@ -28,16 +28,17 @@ Priyanshu Blog
   </div>
 </section>
 
-<section id="latest-posts" class="container my-5">
-  <h2 class="text-center mb-4">My Latest Thoughts</h2>
+<section id="latest-posts" class="container py-5 mt-5 bg-light rounded shadow">
+  <h2 class="text-center mb-4 fw-bold text-dark">My Latest Thoughts</h2>
   <div class="row g-4">
     {% for post in posts %}
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-sm-6 col-lg-4">
         {% include "blog/includes/post.html" %}
       </div>
     {% endfor %}
   </div>
 </section>
+
 
 <section id="about" class="bg-warning text-dark py-5">
   <div class="container text-center">
