@@ -8,16 +8,16 @@ body {
 }
 
 #all-posts {
-  margin: 7rem auto;
+  margin: 5rem auto; /* Reduced top margin */
   width: 90%;
   max-width: 60rem;
 }
 
 #all-posts h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem; /* Use rem */
   color: #2e2e2e;
-  margin: 3rem 0;
+  margin: 2rem 0; /* Reduced margins */
 }
 
 ul {
@@ -25,19 +25,36 @@ ul {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); /* Adjusted minmax */
+  gap: 1rem; /* Reduced gap */
 }
 
 .post img {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem; /* Adjusted image size */
+  height: 6rem; /* Adjusted image size */
 }
 
 .post a {
-  height: 22rem;
+  height: 20rem; /* Adjusted height */
   transform-origin: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   background-color: white;
+}
+
+@media (max-width: 576px) {
+  ul {
+    grid-template-columns: 1fr; /* Stack on very small screens */
+  }
+
+  .post a {
+    height: auto; /* Allow height to adjust */
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .post img {
+    width: 5rem;
+    height: 5rem;
+  }
 }
