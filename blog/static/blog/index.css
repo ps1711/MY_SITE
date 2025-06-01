@@ -57,7 +57,6 @@
 @media (max-width: 768px) {
   #latest-posts {
     margin-top: 1rem;
-    padding: 1.5rem;
   }
 }
 
@@ -77,6 +76,7 @@
 }
 
 #latest-posts li {
+  flex: 1 1 200px;
   max-width: 100px;
 }
 
