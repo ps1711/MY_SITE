@@ -51,6 +51,7 @@
   justify-content: center;
   display: flex;
   z-index: 1;
+  padding-left: 1rem;
   overflow-y: hidden;
 }
 
